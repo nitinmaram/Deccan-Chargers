@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Model Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+<link href="https://fonts.googleapis.com/css?family=Molle:400i" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="C:\Users\admin\Desktop\Deccan Chargers\dist\semantic.min.js"></script>
+<style>
+body{
+background: url('images/cardback.jpg');
+margin-top: 70px;
+}
+</style>
+<body>
+  <div class="ui one column center aligned grid">
+  <div class="column six wide form-holder">
+    <h1 class="center aligned header form-head" style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:40px;color:white;">Sign in</h2>
+    <form class="ui form">
+      <div class="field">
+      <input type="text" placeholder="username" id="name" style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:20px;color:black;">
+      </div>
+      <div class="field">
+        <h1 class="center aligned header form-head" style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:20px;color:white;">
+        <input type="password" placeholder="password" id="password" style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:20px;color:black;"></h1>
+      </div>
+      <div class="field">
+        <a href="DeccanChargers.html"><input type="submit" id="onclick1"value="Go!" class="ui button large fluid green" style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:30px;color:white;">
+      </div></a>
+      <div class="inline field">
+        <div class="ui checkbox">
+          <input type="checkbox">
+
+          <label style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:30px;color:white;">Remember me</label>
+          
+          <div class="ui error message"></div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+
+$('#onclick1').click(function(){
+$('.ui.form')
+  .form({
+    fields: {
+      name: {
+        identifier: 'name',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter your name'
+          }
+        ]
+      },
+      
+      password: {
+        identifier: 'password',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter a password'
+          },
+          {
+            type   : 'minLength[6]',
+            prompt : 'Your password must be at least {ruleValue} characters'
+          }
+        ]
+      },
+   
+    }
+  });
+});
+</script>
+</body>
+</html>

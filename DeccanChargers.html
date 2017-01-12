@@ -1,0 +1,333 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sample Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+<link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+<link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Molle:400i" rel="stylesheet">
+<script type="text/javascript" src="dist/semantic.min.js"></script>
+<style>
+body{
+  background: url('images/cardback.jpg');
+}
+header{
+  background: url('images/cardback.jpg');
+}
+.mainhead:hover{
+  font-size: 42px;
+}
+  .tem.log.hover{
+    font-size: 100px;
+  }
+.columnback{
+  background: url('images/cardback.jpg');
+}
+	.dummy:hover{
+
+	width: 250px; 
+	height: 250px;
+	cursor: pointer;
+	}
+ 
+
+  .banner{
+    background: url('images/jumbo.jpg');
+    margin-top: 17.5%;
+    padding-top: 700px;
+    background-size: cover;
+    background-position: bottom;
+    background-position: 50% 50%;
+    min-height: 100
+  }
+  .cardback{
+    background: url('images/cardback.jpg');
+    background-size: cover;
+  }
+  .footback{
+    /*background: url('images/cardback.jpg');*/
+  }
+</style>
+</head>
+<body>
+
+<div class="ui sidebar vertical top inverted menu phone only" style="background: url('images/cardback.jpg');font-family: 'Molle', cursive;">
+  <a id="toggle1"href="#" class="active item"> <i class="sidebar icon"></i>Menu</a>
+<a href="#" class="item">Home</a>
+<a href="#" class="item">Messages</a>
+<a href="#" class="item">Friends</a> 
+          <input type="text" placeholder="Search..." style="margin-left:15px;margin-top:10px;">
+          <i class="search link icon"></i>
+       
+<a href="#" class="item">Log Out</a>
+</div>
+<div class="ui stackable basic icon top fixed menu phone only" style="background: url('images/cardback.jpg');">
+  <a id="toggle" class="item" style="color:white;font-family: 'Molle', cursive;">
+    <i class="sidebar icon"></i>
+    Menu
+  </a>
+</div>
+<script>
+$('.ui.sidebar').toggle(); 
+$('#toggle').click(function(){
+  $('.ui.sidebar').sidebar('toggle');
+});
+$('#toggle1').click(function(){
+  $('.ui.sidebar').sidebar('hide');
+});
+</script>
+<audio id="sound" src="audio/kalimba.mp3"></audio>
+  <header class="ui grid computer only"> <!-- Computer Menu -->
+<div class="ui menu fixed">
+  <div class="ui small fixed fluid secondary menu"  style=" background: url('images/headback.jpg');background-size:cover">
+  		<h1><img class="ui left floated image dummy" onmouseover="document.getElementById('sound').play()" onmouseout="document.getElementById('sound').pause();document.getElementById('sound').currenttime=0" src="images/dc.jpg" alt="No Image" ></h1>
+  		<h1 style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:40px;"><a class="mainhead" href="#" style="color:black;">Deccan Chargers</h1></a>
+  	
+    <a class="item" style="">
+      <i class="home huge icon"></i>
+      <h1 style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:15px;">Home</h1>
+    </a>
+    <a class="item">
+       <i class="Announcement big icon"></i>
+      <h1 style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:15px;">Messages</h1>
+    </a>
+    <a class="item">
+       <i class="info circle big icon"></i>
+      <h1 style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:15px;">Friends</h1>
+    </a>
+    <!-- <div class="right menu"> -->
+      <div class="right item">
+        <div class="ui icon input">
+          <input type="text" placeholder="Search...">
+          <i class="search link icon"></i>
+        </div>
+      </div>
+      <a class="item" href="html/index.html">
+        <i class="Sign Out big icon"></i>
+        <h1 style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:20px;">Logout</h1>
+      </a>
+    </div>
+  </div>
+  </div>
+</header>
+<div class="bannerback">
+<div class="ui banner">
+  <h1 style="overflow:hidden;margin-top:-150px;margin-bottom:0px;margin-left:425px;font-family: 'Frijole', cursives;color:white">Champions</h1>
+</div>
+</div>
+<div class="cardback">
+<div class="ui container">
+  <div class="ui two stackable cards">
+  <div class="card" style="">
+    <div class="image">
+      <img src="images/card1.jpg">
+    </div>
+    <div class="content">
+      <a class="header" style="font-family: 'Molle', cursive;">Go to Live Match</a>
+    </div>
+    <div class="description"  style="letter-spacing:2px;line-height:28px;padding-bottom:10px;padding-left:10px;padding-right:10px;background:black;color:white;">
+      After Kochi Tuskers - whose contract was terminated in 2011 - won an arbitration against the board which raised their hopes of a return to IPL fold, it may be the turn of Deccan Chargers to attempt a re-entry . TOI has learnt that the team's final arbitration against BCCI is due later this month and the Chargers, removed from the IPL roster in 2012, are confident of a positive outcome.
+      <br><a href="#">(Read More)</a>
+    </div>
+  </div>
+  <div class="card"style="">
+    <div class="image">
+      <img src="images/card1.jpg">
+    </div>
+    <div class="content">
+      <a class="header" style="font-family: 'Molle', cursive;">Match Highlights</a>
+    </div>
+    <div class="description"  style="letter-spacing:2px;line-height:28px;padding-bottom:10px;padding-left:10px;padding-right:10px;background:black;color:white;">
+      The sole arbitrator in this case is retired Supreme Court Justice CK Thakkar. If the arbitrator rules in favour of the Chargers, the franchise could be tempted to float a team from a different city than Hyderabad (since the city already has an IPL team in Sunrisers Hyderabad), said a source close to the developments.The owners put the franchise up for sale in 2012 but declined the sole bid. 
+      <br><a href="#">(Read More)</a>
+    </div>
+  </div>
+  
+  <div class="card"style="">
+    <div class="image">
+      <img src="images/card4.jpg">
+    </div>
+    <div class="content">
+      <a class="header" style="font-family: 'Molle', cursive;">Statistics of League</a>
+    </div>
+    <div class="description"  style="letter-spacing:2px;line-height:18px;padding-bottom:10px;padding-left:10px;padding-right:10px;background:black;color:white;">
+      Due to financial problems, Deccan Chronicle Holdings Ltd (DCHL), the DC team owners, decided to sell the franchise in Sept 2012. The auction for the franchise went in vain as the team's owners rejected the sole bid they received from PVP Ventures. Later, BCCI terminated the DC franchise for breaching contract terms, and invited tenders for a new team from Hyderabad.<br><a href="#">(Read More)</a>
+    </div>
+  </div>
+  <div class="card"style="">
+    <div class="image">
+      <img src="images/card3.jpg">
+    </div>
+    <div class="content">
+      <a class="header" style="font-family: 'Molle', cursive;">Hall of Fame</a>
+    </div>
+    <div class="description"  style="letter-spacing:2px;line-height:18px;padding-bottom:10px;padding-left:10px;padding-right:10px;background:black;color:white;">
+      The sole arbitrator in this case is retired Supreme Court Justice CK Thakkar. If the arbitrator rules in favour of the Chargers, the franchise could be tempted to float a team from a different city than Hyderabad (since the city already has an IPL team in Sunrisers Hyderabad), said a source close to the developments."The final arbitration.<br><a href="#">(Read More)</a>
+    </div>
+  </div>
+</div>
+</div> <!-- cards -->
+</div> <!-- cardback -->
+<div class="columnback">
+<div class="ui grid container"> <!--columns-->
+  <div class="ui stackable equal width relaxed grid" style="font-family: 'Molle', cursive;">
+    <div class="column" ><div class="ui container">
+  <div class="ui shape s1">
+    <div class="sides">
+      <div class="active side">
+        <div class="ui raised segment" style="background:grey;color:black;letter-spacing: 2px;font-size:25px;line-height:30px;">
+          The Deccan Chargers, or Hyderabad Deccan Chargers known in short as DC, was a cricket franchise based in the city of Hyderabad in the Indian Premier League.[1] The team was one of the eight founding members of the IPL in 2008 and was owned by Deccan Chronicle Holdings Ltd. After finishing last in the first season of the IPL.
+        </div>
+      </div>
+      <div class="side">
+       <div class="ui raised segment" style="background:grey;color:black;font;font-weight: bold
+        font-family: 'Bevan', cursive;letter-spacing: 2px;font-size:25px;line-height:30px;">
+           they won the second season held in South Africa in 2009 under the captaincy of former Australian wicket-keeper batsman Adam Gilchrist. Gilchrist was the captain of the team for the first three seasons of the IPL. From the fourth season, Kumar Sangakkara led the team and Cameron White played as his deputy.
+        </div>
+      </div>
+      <div class="side">
+       <div class="ui raised segment" style="background:grey;color:black;font;font-weight: bold
+        font-family: 'Bevan', cursive;letter-spacing: 2px;font-size:25px;line-height:30px;">
+          he owners put the franchise up for sale in 2012 but declined the sole bid. On 14 September 2012, the IPL governing council terminated the Chargers for breaching contract terms.[2] The Sun TV Network won the bid for the Hyderabad franchise, the BCCI confirmed on 25 October 2012
+          The Hyderabad franchise was bought by Deccan Chronicle Holdings Ltd.
+        </div>
+      </div>
+      <div class="side">
+        <div class="ui raised segment" style="background:grey;color:black;font;font-weight: bold
+        font-family: 'Bevan', cursive;letter-spacing: 2px;font-size:25px;line-height:30px;">
+          Despite the fact that the team was one of the favorites to win the inaugural edition of the IPL, the team failed to reach the semi-finals. Andrew Symonds, who was Deccan's most expensive player, batted only 3 innings before leaving to play for the Australian national team. In addition, the team captain V.V.S. Laxman.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui teal basic button" id="flip1" style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:15px;0px;width:300px;margin-left:25px;margin-top:10px;">Flip</div>
+  </div>
+  </div> <!--1st Column-->
+    <div class="column"><div class="ui container">
+  <div class="ui shape s2">
+    <div class="sides">
+      <div class="active side">
+        <div class="ui raised segment" style="background:grey;color:black;font;font-weight: bold
+        font-family: 'Bevan', cursive;letter-spacing: 2px;font-size:25px;line-height:30px;">
+          Only three bowlers R. P. Singh, Pragyan Ojha and Shahid Afridi took more than 4 wickets in the competition. In this 14 match period, the team went on a losing streak at home and only managed 2 wins overall, one against the Mumbai Indians and one against the Chennai Super Kings and as a result they finished at the bottom of the table.
+        </div>
+      </div>
+      <div class="side">
+      <div class="ui raised segment" style="background:grey;color:black;font;font-weight: bold
+        font-family: 'Bevan', cursive;letter-spacing: 2px;font-size:25px;line-height:30px;">
+         After the debacle of 2008, the team management sacked the entire administration associated with the tournament in that year. They removed their CEO J. Kalyan Krishnan, Coach Robin Singh and the Captain V.V.S. Laxman and replaced them with Tim Wright, the former Australian batsman Darren Lehmann
+        </div>
+      </div>
+      <div class="side">
+        <div class="ui raised segment" style="background:grey;color:black;font;font-weight: bold
+        font-family: 'Bevan', cursive;letter-spacing: 2px;font-size:25px;line-height:30px;">
+        former Australian Wicket-keeper Adam Gilchrist respectively. Many new players were taken from domestic circuit and also few new international players were signed. The 2008 sponsor Jaypee Groupwithdrew its sponsorship due to the 2008 debacle. After this, the Deccan Chargers went through a complete makeover, including changing the colours of the team
+        </div>
+      </div>
+      <div class="side">
+       <div class="ui raised segment" style="background:grey;color:black;font;font-weight: bold
+        font-family: 'Bevan', cursive;letter-spacing: 2px;font-size:25px;line-height:30px;">
+          vibrant blue and a new logo displaying a more vibrant charging bull with Deccan Chronicle as the primary sponsor for the team. Among the other members of the support staff, their physio Sean Slattery and performance analyst Unni Krishnan were retained and were part of the team to win the IPL second edition in 2009 which was held in South Africa.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui teal basic button" id="flip2" style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:15px;0px;width:300px;margin-left:25px;margin-top:10px;">Flip</div>
+</div>
+</div> <!--2nd column-->
+    <div class="column"><div class="ui container">
+  <div class="ui shape s3">
+    <div class="sides">
+      <div class="active side">
+        <div class="ui raised segment" style="background:grey;color:black;font;font-weight: bold
+        font-family: 'Bevan', cursive;letter-spacing: 2px;font-size:25px;line-height:30px;">
+          In low key trading of players, the Deccan Chargers management had placed Shahid Afridi and Herschelle Gibbs up for sale, a direct result of their below par performance during the 2008 season. However, no franchise owners were interested in purchasing these two players.  Later, the Deccan Chargers management severed all ties with Shahid Afridi, 
+        </div>
+      </div>
+      <div class="side">
+        <div class="ui raised segment" style="background:grey;color:black;font;font-weight: bold
+        font-family: 'Bevan', cursive;letter-spacing: 2px;font-size:25px;line-height:30px;">
+          Before the second player auction took place the management signed Queensland all-rounder Ryan Harris owing to a strong recommendation from coach Darren Lehmann. In the resulting auction the Deccan Chargers franchise acquired two West Indian players, Fidel Edwards for a fee of $150,000, and Dwayne Smith for $100,000.
+        </div>
+      </div>
+      <div class="side">
+      <div class="ui raised segment" style="background:grey;color:black;font;font-weight: bold
+        font-family: 'Bevan', cursive;letter-spacing: 2px;font-size:25px;line-height:30px;">
+         Seven new domestic players were also signed up including batsmen Tirumalasetti Suman and Abhinav Kumar, and bowler Shoaib Maqsusi from the Hyderabad team after their consistent performances on the domestic circuit.Baroda batsman Azhar Bilakhia and two fast bowlers from Punjab, Jaskarandeep Singh and Harmeet Singh were also signed on.
+        </div>
+      </div>
+      <div class="side">
+       <div class="ui raised segment" style="background:grey;color:black;letter-spacing: 2px;font-size:25px;line-height:30px;">
+         With the below-par performance in the inaugural season and finishing at the bottom, Deccan staged an inspired comeback in 2009 by winning the second IPL season. After having an undefeated run in the initial league stage, the team suffered minor setbacks by losing some close matches. But the return of Andrew Symonds
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui teal basic button" id="flip3" style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:15px;width:300px;margin-left:25px;margin-top:10px;">Flip</div>
+</div>
+</div> <!--3rd column-->
+  </div>
+</div> <!-- end of 3 columns -->
+</div>
+<!-- fotter-->
+<div class="footback">
+<div class="ui container" style="margin-top:10px;">
+
+    <div class="ui grid">
+        
+        <div class="eight wide column">
+            <footer>
+    <div class="copyright" style="font-size:15px;color:white">
+             <p>Copyrights © 2014 All Rights Reserved by Canvas Inc.
+             <a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></p>
+         </div></footer>
+    
+    </div>
+
+        <div class="eight wide column">
+            <div class="ui center stackable secondary menu" style="margin-top:-20px">
+ <a class="right item" style="color:blue" href="https://www.facebook.com/">
+   <i class="facebook big icon"></i>
+ </a>
+ <a class="item" style="color:blue" href="https://twitter.com/">
+   <i class="twitter big icon"></i>
+ </a>
+ <a class="item" href="https://instagram.com/">
+   <i class="photo big icon"></i>
+ </a>
+  <a class="item" style="color:red" href="https://yahoo.com/">
+   <i class="yahoo big icon"></i>
+ </a>
+</div>
+        </div>
+
+    </div>
+    </div>
+  </div> <!-- end of footback -->
+<script>
+$('#flip3').click(function(){
+  $('.ui.shape.s3').shape('flip right');
+});
+$('#flip2').click(function(){
+  $('.ui.shape.s2').shape('flip down');
+});
+$('#flip1').click(function(){
+  $('.ui.shape.s1').shape('flip left');
+});
+setInterval(function() {
+  $('.ui.shape.s1').shape('flip left');
+},10000);
+
+setInterval(function() {
+  $('.ui.shape.s2').shape('flip down');
+},10000);
+setInterval(function() {
+  $('.ui.shape.s3').shape('flip right');
+},10000);
+</script>
+
+</body>
+</html>
