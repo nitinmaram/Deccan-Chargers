@@ -17,7 +17,7 @@ margin-top: 70px;
   <div class="ui one column center aligned grid">
   <div class="column six wide form-holder">
     <h1 class="center aligned header form-head" style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:40px;color:white;">Sign in</h2>
-    <form class="ui form">
+    <form class="ui form" action="DeccanChargers.html">
       <div class="field">
       <input type="text" placeholder="username" id="name" style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:20px;color:black;">
       </div>
@@ -26,8 +26,9 @@ margin-top: 70px;
         <input type="password" placeholder="password" id="password" style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:20px;color:black;"></h1>
       </div>
       <div class="field">
-        <a href="DeccanChargers.html"><input type="submit" id="onclick1"value="Go!" class="ui button large fluid green" style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:30px;color:white;">
-      </div></a>
+        <input type="submit" id="onclick1" value="Go!" class="ui button large fluid green" style="font-family: 'Molle', cursive;letter-spacing:2px;font-size:30px;color:white;"/>
+      
+      </div>
       <div class="inline field">
         <div class="ui checkbox">
           <input type="checkbox">
@@ -46,6 +47,7 @@ margin-top: 70px;
 $('#onclick1').click(function(){
 $('.ui.form')
   .form({
+    inline:true,
     fields: {
       name: {
         identifier: 'name',
