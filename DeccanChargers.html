@@ -19,6 +19,7 @@ header{
 }
 .mainhead:hover{
   font-size: 42px;
+  
 }
   .tem.log.hover{
     font-size: 100px;
@@ -35,9 +36,11 @@ header{
  
 
   .banner{
-    background: url('images/jumbo.jpg');
-    margin-top: 17.5%;
-    padding-top: 700px;
+    
+    background: url('images/cardback.jpg');
+    /*margin-top: 18%;
+*/    /*padding-top: 700px;*/
+
     background-size: cover;
     background-position: bottom;
     background-position: 50% 50%;
@@ -113,11 +116,21 @@ $('#toggle1').click(function(){
   </div>
   </div>
 </header>
-<div class="bannerback">
-<div class="ui banner">
-  <h1 style="overflow:hidden;margin-top:-150px;margin-bottom:0px;margin-left:425px;font-family: 'Frijole', cursives;color:white">Champions</h1>
+<div class="ui grid computer only">
+<div class="ui shape">  <!--Banner -->
+  <div class="ui sides">
+<div class="ui banner side computer only"><img style="margin-top:200px;"src="images/banner.jpg"></div>
+  <div class="ui banner active side computer only"><img style="margin-top:200px;"src="images/banner2.jpg"></div>
+  <div class="ui banner  side"><img style="margin-top:200px;"src="images/banner3.jpg"></div>
 </div>
 </div>
+</div>
+<script>
+setInterval(function() {
+  $('.ui.shape').shape('flip over');
+},4000);
+</script>
+
 <div class="cardback">
 <div class="ui container">
   <div class="ui two stackable cards">
