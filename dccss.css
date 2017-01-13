@@ -1,0 +1,42 @@
+body{
+  background: url('images/cardback.jpg');
+}
+header{
+  background: url('images/cardback.jpg');
+}
+.mainhead:hover{
+  font-size: 42px;
+  
+}
+  .tem.log.hover{
+    font-size: 100px;
+  }
+.columnback{
+  background: url('images/cardback.jpg');
+}
+	.dummy:hover{
+
+	width: 250px; 
+	height: 250px;
+	cursor: pointer;
+	}
+ 
+
+  .banner{
+    
+    background: url('images/cardback.jpg');
+    /*margin-top: 18%;
+*/    /*padding-top: 700px;*/
+
+    background-size: cover;
+    background-position: bottom;
+    background-position: 50% 50%;
+    min-height: 100
+  }
+  .cardback{
+    background: url('images/cardback.jpg');
+    background-size: cover;
+  }
+  .footback{
+    /*background: url('images/cardback.jpg');*/
+  }
